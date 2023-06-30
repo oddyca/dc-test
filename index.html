@@ -35,18 +35,61 @@
         ></a>
       </div>
     </div>
-    <div class="header__grid">
+    <div class="grid header__grid">
       <div class="header__greetings">
-        <div class="greetings greetings__header">Меня зовут Александра Смит</div>
-        <div class="greetings greetings__body">Я web-разработчик из города Москва</div>
+        <p class="title-circle greetings__header">Меня зовут Александра Смит</p>
+        <h1 class="greetings greetings__body">Я web-разработчик из города Москва</h1>
         <div class="greetings__links">
           <a class="links__to-portfolio" href="#">Портфолио</a>
-          <a class="links__about-me" href="#">Про меня</a>
+          <a class="links__about-me" href="#about-me">Про меня</a>
         </div>
       </div>
     </div>
     <button class="header__burger-menu"></button>
   </header>
+  <main class="main-container">
+    <div class="grid">
+      <div class="main__about-me" id="about-me">
+        <div class="about__image">
+          <img src="./assets/photo.png" alt="portfolio photo" />
+        </div>
+        <div class="about__main">
+          <p class="title-circle about__title">Про меня</p>
+          <h1>Меня зовут Александра</h1>
+          <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <div class="about__skills">
+            <div class="skill skills__web">
+              <div class="skills__img">
+                <img src="./assets/webGroup.svg" alt="webDev icon"/>
+              </div>
+              <div class="skills__description">
+                <h2>Web-разработка</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="skill skills__ui">
+              <div class="skills__img">
+                <img src="./assets/appsGroup.svg" alt="appDev icon"/>
+              </div>
+              <div class="skills__description">
+                <h2>Разработка приложений</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="skill skills__apps">
+              <div class="skills__img">
+                <img src="./assets/uiGroup.svg" alt="uiux icon"/>
+              </div>
+              <div class="skills__description">
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
