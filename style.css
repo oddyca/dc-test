@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --yellow-accent: lch(75.59% 83.67 70.8);
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url('./assets/bg.png');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__socials {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 15px;
+  transform: rotate(-90deg);
+  top: 47.5%;
+  left: -5.5%;
+}
+
+.header__socials > span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.socials-container {
+  display: flex;
+  gap: 15px;
+}
+
+.git {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url('assets/git.svg');
+}
+
+.insta {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url('assets/insta.svg');
+}
+
+.facebook {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url('assets/facebook.svg');
+}
+
+.header__grid {
+  width: 1140px;
+  height: 100%; 
+}
+
+.header__burger-menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background-image: url('assets/hamburger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__greetings {
+  position: relative;
+  max-width: 510px; 
+  top: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.greetings__header {
+  position: relative;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.greetings__header::before {
+  content: url('./assets/circle.svg');
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  z-index: -1;
+}
+
+.greetings__body {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+.greetings__links {
+  display: flex;
+  gap: 36px;
+  margin-top: 1rem;
+}
+
+.greetings__links > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.links__to-portfolio {
+  display: block;
+  width: 135px;
+  height: 45px;
+  background-color: var(--yellow-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.links__about-me {
+  display: block;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
