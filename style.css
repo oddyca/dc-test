@@ -258,7 +258,7 @@
 .main__experience {
   display: flex;
   flex-direction: column;
-  margin-top: 7.5rem;
+  margin-top: 7rem;
 }
 
 .experience__title {
@@ -272,8 +272,8 @@
 .experience-container {
   display: flex;
   justify-content: space-around;
-  gap: 8rem;
-  margin-top: 3.75rem;
+  gap: 10rem;
+  margin-top: 4.5rem;
   margin-left: 4.5rem;
 }
 
@@ -286,7 +286,7 @@
 .exp__items {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .exp__item {
@@ -301,6 +301,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+}
+
+.title__sub {
+  color: #000;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .item__header {
