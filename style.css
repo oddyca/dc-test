@@ -96,7 +96,7 @@
   gap: 10px;
 }
 
-.title-circle, .greetings__header {
+.title-circle, .title-circle-center, .greetings__header {
   position: relative;
   font-size: 1rem;
   font-style: normal;
@@ -104,6 +104,20 @@
   line-height: normal;
   padding-left: 1rem;
   z-index: 1;
+}
+
+.title-circle-center {
+  padding-left: 0;
+}
+
+.title-circle-center::before {
+  content: url('./assets/circle.svg');
+  position: absolute;
+  left: 10%;
+  top: -5px;
+  width: 36px;
+  height: 36px;
+  z-index: -1;
 }
 
 .title-circle::before {
@@ -209,6 +223,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  row-gap: 30px;
   margin-top: .5rem;
 }
 
@@ -238,6 +253,75 @@
   display: flex;
   flex-direction: column;
   gap: .5rem;
+}
+
+.main__experience {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.5rem;
+}
+
+.experience__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  margin-top: 3.75rem;
+  margin-left: 4.5rem;
+}
+
+.education, .work {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.exp__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.exp__item {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.exp__title {
+  color: #000;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.item__header {
+  display: flex;
+  gap: .5rem;
+}
+
+.title__bold {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.item__description > p {
+  color: #000;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media (max-width:1919px) {
