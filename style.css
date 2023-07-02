@@ -12,6 +12,10 @@
   --grey: lch(90.78% 3.5 79.74);
 }
 
+body {
+  padding-bottom: 7.5rem;
+}
+
 .header-container {
   position: relative;
   width: 100%;
@@ -68,6 +72,13 @@
   background-image: url('assets/facebook.svg');
 }
 
+.telegram {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url('assets/telegram.svg');
+}
+
 .grid {
   width: 1140px;
   height: 100%; 
@@ -97,7 +108,7 @@
   gap: 10px;
 }
 
-.title-circle, .title-circle-center, .greetings__header {
+.title-circle, .title-circle-center, .greetings__header, .pricelist__title {
   position: relative;
   font-size: 1rem;
   font-style: normal;
@@ -151,14 +162,13 @@
 .greetings__links > a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.links__to-portfolio {
+.links__to-portfolio, .form__submit {
   display: block;
   width: 135px;
   height: 45px;
@@ -239,7 +249,6 @@
 }
 
 .skill h2 {
-  color: #000;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -247,7 +256,6 @@
 }
 
 .skill p {
-  color: #000;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -260,14 +268,13 @@
   gap: .5rem;
 }
 
-.main__experience, .main__skills {
+.main__experience, .main__skills, .main__pricelist {
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
 }
 
 .title-text {
-  color: #000;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
@@ -372,7 +379,6 @@
 }
 
 .table__item > p {
-  color: #000;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -439,7 +445,7 @@
 }
 
 .portfolio__title {
-  margin-top: 7.5rem;
+  margin-top: 8rem;
 }
 
 .portfolio-title::before {
@@ -476,6 +482,153 @@
 
 .wide {
   grid-column: span 2;
+}
+
+.main__pricelist {
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+.pricelist-title::before {
+  left: 30%;
+}
+
+.pricelist__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pricelist__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15rem;
+  row-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.pricelist__item {
+  display: flex;
+  gap: .5rem;
+  width: 100%;
+}
+
+.pricelist__bullet > img {
+  transform: scale(.3);
+}
+
+.pricelist__info {
+  width: 100%;
+}
+
+.info__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__contact {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-left: 3.5rem;
+}
+
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__title > h1{
+  margin-top: 1rem;
+}
+
+.contact__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: .5rem;
+}
+
+.form-paragraph {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-socials-link {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.form__inputs input {
+  border: solid 1px black;
+}
+
+.form__name {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+
+.name-input__container {
+  flex-grow: 1;
+}
+
+.form-input {
+  position: relative;
+  width: 100%;
+  padding: .75rem;
+}
+
+.name-input__container {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  padding: .5rem;
+  font-size: 12px;
+  background-color: white;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.input__text {
+  min-height: 100px;
+  height: 100%;
+  resize: none;
+}
+
+.form__submit {
+  outline: none;
+  border: none;
+  width: fit-content;
+  padding: 12px 26px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media (max-width:1919px) {
