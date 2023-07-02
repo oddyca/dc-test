@@ -21,6 +21,56 @@ a {
   color: black;
 }
 
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 345px;
+  height: 100dvh;
+  background-color: var(--yellow-accent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  padding: 4rem;
+}
+
+.burger__close {
+  width: 29px;
+  height: 29px;
+  background-image: url('./assets/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.burger__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+li {
+  list-style-image: url('./assets/navMarker.svg');
+  gap: 4rem;
+  padding-left: 1rem;
+}
+
+.navigation__link {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .header-container {
   position: relative;
   width: 100%;

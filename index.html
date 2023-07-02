@@ -9,6 +9,34 @@
   <title>Digital Chief Test Task. Portfolio</title>
 </head>
 <body>
+  <div class="burger-menu">
+    <button class="burger__close"></button>
+    <ul class="burger__navigation">
+      <li class="navigation__item"><a href="#about-me" class="navigation__link">ПРО МЕНЯ</a></li>
+      <li><a href="#experience" class="navigation__link">МОЙ ОПЫТ</a></li>
+      <li><a href="#skills" class="navigation__link">МОИ НАВЫКИ</a></li>
+      <li><a href="#portfolio" class="navigation__link">МОИ РАБОТЫ</a></li>
+      <li><a href="#pricelist" class="navigation__link">ПРАЙС-ЛИСТ</a></li>
+      <li><a href="#contact" class="navigation__link">КОНТАКТЫ</a></li>
+    </ul>
+    <div class="burger__socials socials-container">
+      <a 
+        class="contact-socials-link git"
+        href="https://github.com/"
+        target="_blank"
+      ></a>
+      <a 
+        class="contact-socials-link insta"
+        href="https://instagram.com/"
+        target="_blank"
+      ></a>
+      <a 
+        class="contact-socials-link facebook"
+        href="https://facebook.com/"
+        target="_blank"
+      ></a>
+    </div>
+  </div>
   <header class="header-container">
     <div class="header__socials">
       <span>Социальные сети</span>
@@ -88,7 +116,7 @@
           </div>
         </div>
       </div>
-      <div class="main__experience">
+      <div class="main__experience" id="experience">
         <div class="experience__title">
           <p class="title-circle-center">Опыт</p>
           <h1 class="title-text">Чем я буду полезна</h1>
@@ -162,7 +190,7 @@
           <div class="experience"></div>
         </div>
       </div>
-      <div class="main__skills">
+      <div class="main__skills" id="skills">
         <div class="main__title">
           <p class="title-circle-center skills-title">Навыки</p>
           <h1 class="title-text">Что я использую в работе</h1>
@@ -293,7 +321,7 @@
           <div class="example wide"><img src="./assets/mac.png" /></div>
         </div>
       </div>
-      <div class="main__pricelist">
+      <div class="main__pricelist" id="pricelist">
         <div class="pricelist__title">
           <p class="title-circle-center pricelist-title">Прайс-лист</p>
           <img src="./assets/line2.svg" alt="line divider" />
@@ -374,7 +402,7 @@
         </div>
         
       </div>
-      <div class="main__contact">
+      <div class="main__contact" id="contact">
         <img src="./assets/photo.png" alt="portfolio photo" />
         <div class="contact__form">
           <div class="form__header">

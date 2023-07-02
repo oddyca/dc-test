@@ -1,3 +1,11 @@
+const burgerMenuButton = document.querySelector('.header__burger-menu');
+const burgerCloseButton = document.querySelector('.burger__close');
+const burgerMenuLinks = document.querySelector('.navigation__bullet');
+
+burgerMenuButton.addEventListener('click', () => {
+  
+});
+
 const form = document.querySelector('.form__inputs');
 const nameInput = document.getElementById('name-input');
 const emailInput = document.getElementById('email-input');
@@ -59,4 +67,3 @@ async function sendFormToServer() {
     console.error('Form submission failed:', error);
   }
 }
-
