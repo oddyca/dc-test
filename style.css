@@ -274,7 +274,7 @@
   line-height: 3.75rem;
 }
 
-.experience__title, .main__title {
+.experience__title, .main__title, .portfolio__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -436,6 +436,46 @@
 
 .pb-soft-skills::before {
   width: 95%;
+}
+
+.portfolio__title {
+  margin-top: 7.5rem;
+}
+
+.portfolio-title::before {
+  left: 30%;
+}
+
+.portfolio__examples {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  width: 100%;
+  gap: 12px;
+  margin-top: 3rem;
+}
+
+.example {
+  overflow: hidden;
+}
+
+.example > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: .2s;
+}
+
+.example:hover > img {
+  transform: scale(1.1)
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
 }
 
 @media (max-width:1919px) {
