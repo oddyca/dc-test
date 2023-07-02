@@ -16,6 +16,11 @@ body {
   padding-bottom: 7.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header-container {
   position: relative;
   width: 100%;
@@ -629,6 +634,15 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.error {
+  border: 1px solid red;
 }
 
 @media (max-width:1919px) {
