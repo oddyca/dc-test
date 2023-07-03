@@ -1,10 +1,39 @@
+const burgerMenu = document.querySelector('.burger-menu');
+const overlay = document.querySelector('.overlay');
 const burgerMenuButton = document.querySelector('.header__burger-menu');
 const burgerCloseButton = document.querySelector('.burger__close');
 const burgerMenuLinks = document.querySelector('.navigation__bullet');
+const burgerNavLinks = document.querySelector('.burger__navigation');
+
+function toggleMenu() {
+  burgerMenu.classList.toggle('open');
+  overlay.classList.toggle('open');
+}
+
+function preventScroll(event) {
+  event.preventDefault();
+}
+
+function removeListeners() {
+  overlay.removeEventListener('wheel', preventScroll);
+  burgerMenu.removeEventListener('wheel', preventScroll);
+}
 
 burgerMenuButton.addEventListener('click', () => {
-  
+  toggleMenu();
+  overlay.addEventListener('wheel', preventScroll);
+  burgerMenu.addEventListener('wheel', preventScroll);
 });
+
+burgerCloseButton.addEventListener('click', () => {
+  toggleMenu();
+  removeListeners();
+});
+
+burgerNavLinks.addEventListener('click', () => {
+  toggleMenu();
+  removeListeners();
+})
 
 const form = document.querySelector('.form__inputs');
 const nameInput = document.getElementById('name-input');
